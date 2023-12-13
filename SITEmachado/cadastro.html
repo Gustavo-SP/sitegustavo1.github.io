@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script>
+    alert("Utilize esse formulario para se comunicar conosco!")
+
+     dia = new Array();
+     mes = new Array();
+     data = new Date();
+</script>
+    
+    
+    <link rel="shortcut icon" href="assents/logo.png">
+    <header>
+   
+        <div class="logo.caixa">
+            <img src="assents/logo.png" class="logo" width="" height="170">
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a> </li>
+                    <li><a href="perfumes.html">Perfumes</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+     
+        <p class="Contato">
+            Nosso horario de funcionamento: Terça  à  Domingo das 18h às 23h
+            <a class="Whatsapp-link" href="https://wa.me/5511951214716" target="_blank">
+                <i class="fa fa-whatsapp"></i></a> (11) 4069-8446 
+       </p>
+        
+    </header>
+    <style>
+   
+       nav{
+    right: 0;
+    position: absolute;
+    top: 65px;
+       }
+    .Contato{
+        margin: center;
+        border-top-color: aquamarine;
+
+       }
+
+nav li{
+    display: inline;
+    margin: 0 25px 25px 25px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #c2c2c2;
+    font-weight: bold;
+    font-size: 22px;
+}
+nav a:hover{
+    color: #5c5c5c ;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c162c;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            width: 80%;
+            height: 70%;
+            margin: 0 auto;
+            background: #f4f4f4;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #d0c6c6;
+        }
+        .input-padrão {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .chk {
+            margin-right: 5px;
+        }
+        .logo{
+            margin: center;
+            padding: 5%;
+
+        }
+    </style>
+</head>
+<body>  
+
+
+
+<form action="processar_cadastro.php" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br><br>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" class="input-padrão" required placeholder="(XX) XXXXX-XXXX"><br><br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required placeholder="@email"><br><br>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required placeholder="Digite a Senha"><br><br>
+
+    <label for="confirmar_senha">Confirmar Senha:</label>
+    <input type="password" id="confirmar_senha" name="confirmar_senha" required placeholder="Confirme a Senha"><br><br>
+
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" required placeholder="Digite sua idade"><br><br>
+
+    <label for="genero">Gênero:</label>
+    <select id="genero" name="genero">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+    </select><br><br>
+
+    <label>
+        <label for="Opinião">Reclame Aqui:
+        <input type="text" required placeholder="Elogie ou Reclame Aqui!"> </label>
+        <input type="datetime-local" class="senha"> Gostaria de receber nossas novidades?
+        <input type="checkbox" class="chk"> E-mail
+        <input type="checkbox" class="chk"> Telefone
+        <input type="checkbox" class="chk"> Whatsapp
+    </label>
+
+    <input type="submit" value="Cadastrar">
+</form>
+
+</body>
+</html>

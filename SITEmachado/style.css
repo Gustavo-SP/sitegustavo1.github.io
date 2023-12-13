@@ -1,0 +1,102 @@
+/*Estilização geral do site*/
+body{
+    font-family: "Garamond";
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+/*Estilização do HEADER da página*/
+header{
+    background-color: #1c162c;
+}
+/*Estilizaçãodo LOGOTIPO*/
+.logo{
+    width: 20%;
+}
+/*Estilização MENU*/
+nav{
+    right: 0;
+    position: absolute;
+    top: 85px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 25px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #c2c2c2;
+    font-weight: bold;
+    font-size: 22px;
+}
+nav a:hover{
+    color: #5c5c5c ;
+}
+.logo.caixa{
+    width: 940px;
+    position: relative;
+    margin: auto;
+}
+/*estilização do logo2 menu*/
+.logo2{
+    width: 100%;
+    float:left ;
+}
+
+
+/*tITULOS PADRÃO*/
+
+.titulo-padrao{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 2px;
+}
+.mapa {
+    background: linear-gradient( #ece7da, #1c162c );
+}
+
+/*Estilização da sessão do estabelecimento*/
+.mapa p{
+    text-align: center;
+}
+.mapa iframe{
+    display: block;
+    margin: auto;
+}
+.itens{
+    line-height: 1,5;
+}
+
+
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.img_beneficios:hover{
+    opacity: 0.7;
+}
+.gif{
+    margin: 0px;
+    margin: auto;
+    width: 100%;
+
+}
+/*estilizaçaõ do footer*/
+footer {
+    text-align: center;
+    background-color: #1c162c;
+    padding: 40px;
+    color:  1c162c;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .copyright {
+    color: #1c162c;
+    font-size: 12px;
+    margin: 20px;
+  }
+  
